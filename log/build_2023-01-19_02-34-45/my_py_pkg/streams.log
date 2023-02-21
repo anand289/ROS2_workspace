@@ -1,0 +1,20 @@
+[0.279s] Invoking command in '/home/anandsingh/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/anandsingh/ros2_ws/build/my_py_pkg/prefix_override:/home/anandsingh/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/anandsingh/ros2_ws/build/my_py_pkg/build install --record /home/anandsingh/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[0.385s] running egg_info
+[0.385s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.385s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.386s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.386s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.386s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.386s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.387s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.387s] running build
+[0.387s] running build_py
+[0.387s] running install
+[0.387s] running install_lib
+[0.388s] running install_data
+[0.388s] running install_egg_info
+[0.389s] removing '/home/anandsingh/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.389s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/anandsingh/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.389s] running install_scripts
+[0.398s] writing list of installed files to '/home/anandsingh/ros2_ws/build/my_py_pkg/install.log'
+[0.409s] Invoked command in '/home/anandsingh/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/anandsingh/ros2_ws/build/my_py_pkg/prefix_override:/home/anandsingh/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/anandsingh/ros2_ws/build/my_py_pkg/build install --record /home/anandsingh/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

@@ -1,0 +1,33 @@
+[0.313s] Invoking command in '/home/anandsingh/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/anandsingh/ros2_ws/src/build/my_py_pkg/prefix_override:/home/anandsingh/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_py_pkg build --build-base /home/anandsingh/ros2_ws/src/build/my_py_pkg/build install --record /home/anandsingh/ros2_ws/src/build/my_py_pkg/install.log --single-version-externally-managed
+[0.428s] running egg_info
+[0.428s] creating ../build/my_py_pkg/my_py_pkg.egg-info
+[0.428s] writing ../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.428s] writing dependency_links to ../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.428s] writing entry points to ../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.428s] writing requirements to ../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.428s] writing top-level names to ../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.428s] writing manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.429s] reading manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.430s] writing manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.430s] running build
+[0.430s] running build_py
+[0.430s] creating /home/anandsingh/ros2_ws/src/build/my_py_pkg/build
+[0.430s] creating /home/anandsingh/ros2_ws/src/build/my_py_pkg/build/lib
+[0.430s] creating /home/anandsingh/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.430s] copying my_py_pkg/__init__.py -> /home/anandsingh/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.430s] running install
+[0.430s] running install_lib
+[0.430s] creating /home/anandsingh/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.430s] copying /home/anandsingh/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/anandsingh/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.430s] byte-compiling /home/anandsingh/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[0.430s] running install_data
+[0.431s] creating /home/anandsingh/ros2_ws/src/install/my_py_pkg/share/ament_index
+[0.431s] creating /home/anandsingh/ros2_ws/src/install/my_py_pkg/share/ament_index/resource_index
+[0.431s] creating /home/anandsingh/ros2_ws/src/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.431s] copying resource/my_py_pkg -> /home/anandsingh/ros2_ws/src/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.431s] copying package.xml -> /home/anandsingh/ros2_ws/src/install/my_py_pkg/share/my_py_pkg
+[0.431s] running install_egg_info
+[0.432s] Copying ../build/my_py_pkg/my_py_pkg.egg-info to /home/anandsingh/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.432s] running install_scripts
+[0.442s] writing list of installed files to '/home/anandsingh/ros2_ws/src/build/my_py_pkg/install.log'
+[0.455s] Invoked command in '/home/anandsingh/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/anandsingh/ros2_ws/src/build/my_py_pkg/prefix_override:/home/anandsingh/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_py_pkg build --build-base /home/anandsingh/ros2_ws/src/build/my_py_pkg/build install --record /home/anandsingh/ros2_ws/src/build/my_py_pkg/install.log --single-version-externally-managed
