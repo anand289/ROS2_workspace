@@ -17,7 +17,6 @@ class MyNode(Node):
 
 def main(args=None):
 	rclpy.init(args=args) #starts the ros2 communication
-
 	node = MyNode()
 	rclpy.spin(node) #keep looping the node here, won't let the node close
 	rclpy.shutdown() #shutdown communication with ros2
