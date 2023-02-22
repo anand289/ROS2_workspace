@@ -8,6 +8,7 @@ class RobotNewsStationNode(Node):
     def __init__(self):
         super().__init__("robot_news_station") 
 
+        self.robot_name = 'C3PO'
         self.publisher_ = self.create_publisher(String, "robot_news",10) #robot_news is the name of the topic
         self.timer_= self.create_timer(0.5,self.publish_news)
         self.get_logger().info("Robot news station has been started")
@@ -15,7 +16,7 @@ class RobotNewsStationNode(Node):
     # function defining what to publish
     def publish_news(self):
         msg = String()
-        msg.data = "Hello"
+        msg.data = "Hello, this is " + str(self.robot_name) + " from the robot news station."
         self.publisher_.publish(msg)
 
 def main(args=None):
