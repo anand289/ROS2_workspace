@@ -1,0 +1,21 @@
+[0.292s] Invoking command in '/home/anandsingh/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/anandsingh/ros2_ws/build/my_py_pkg/prefix_override:/home/anandsingh/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/anandsingh/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[0.405s] running develop
+[0.468s] running egg_info
+[0.469s] writing my_py_pkg.egg-info/PKG-INFO
+[0.469s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[0.469s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[0.469s] writing requirements to my_py_pkg.egg-info/requires.txt
+[0.469s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[0.470s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.470s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.471s] running build_ext
+[0.471s] Creating /home/anandsingh/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[0.472s] Installing add_two_ints_client_no_oop = my_py_pkg.add_two_ints_client:main,add_two_ints_client_no_oop script to /home/anandsingh/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.472s] Installing add_two_ints_server script to /home/anandsingh/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.472s] Installing py_node script to /home/anandsingh/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.472s] Installing robot_news_station script to /home/anandsingh/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.472s] Installing smartphone script to /home/anandsingh/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.472s] 
+[0.472s] Installed /home/anandsingh/ros2_ws/build/my_py_pkg
+[0.472s] running install_data
+[0.486s] Invoked command in '/home/anandsingh/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/anandsingh/ros2_ws/build/my_py_pkg/prefix_override:/home/anandsingh/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/anandsingh/ros2_ws/build/my_py_pkg/build --no-deps install_data

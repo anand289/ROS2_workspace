@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# this is a server server. 
+
 import rclpy
 from rclpy.node import Node
 
