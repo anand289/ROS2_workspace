@@ -9,6 +9,8 @@ class AddTwoClientNode(Node): # MODIFY NAME
     def __init__(self):
         super().__init__("add_two_ints_client") # MODIFY NAME
         self.callback_add_two_ints_server(6,7)
+        self.callback_add_two_ints_server(3,1)
+        self.callback_add_two_ints_server(5,2)
 
     def callback_add_two_ints_server(self,a,b):
         client = self.create_client(AddTwoInts,"add_two_ints")
