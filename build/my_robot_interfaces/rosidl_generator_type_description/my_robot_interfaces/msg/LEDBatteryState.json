@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "my_robot_interfaces/msg/LEDBatteryState",
+      "fields": [
+        {
+          "name": "led_status",
+          "type": {
+            "type_id": 152,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "my_robot_interfaces/msg/LEDBatteryState",
+      "hash_string": "RIHS01_bb0a401ddc38da8bc7d50e1b8baa077492831ebe22d4d0778d638b3888e87158"
+    }
+  ]
+}

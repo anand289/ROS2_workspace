@@ -1,0 +1,6 @@
+msg/HardwareStatus.idl
+msg/HardwareStatus.msg
+msg/LEDBatteryState.idl
+msg/LEDBatteryState.msg
+srv/ComputeRectangleArea.idl
+srv/ComputeRectangleArea.srv

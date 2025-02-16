@@ -1,0 +1,56 @@
+[0.503s] Invoking command in '/home/anand289/ros2_ws/build/my_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/anand289/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/home/anand289/ros2_ws/build/my_py_pkg:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/anand289/ros2_ws/build/my_py_pkg/build
+[0.636s] running develop
+[0.714s] Removing /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my-py-pkg.egg-link (link to .)
+[0.730s] Invoked command in '/home/anand289/ros2_ws/build/my_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/anand289/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/home/anand289/ros2_ws/build/my_py_pkg:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/anand289/ros2_ws/build/my_py_pkg/build
+[0.731s] Invoking command in '/home/anand289/ros2_ws/src/my_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/anand289/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/home/anand289/ros2_ws/build/my_py_pkg:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/anand289/ros2_ws/build/my_py_pkg/build install --record /home/anand289/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data --force
+[0.844s] running egg_info
+[0.851s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.851s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.852s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.852s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.852s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.872s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.875s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.875s] running build
+[0.875s] running build_py
+[0.875s] copying my_py_pkg/add_two_ints_client.py -> /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.876s] copying my_py_pkg/add_two_ints_client_no_oop.py -> /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.876s] copying my_py_pkg/hw_status_publisher.py -> /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.876s] copying my_py_pkg/my_first_node.py -> /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.876s] copying my_py_pkg/add_two_ints_server.py -> /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.876s] running install
+[0.880s] running install_lib
+[0.887s] creating /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.887s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/template_python_node.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.887s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client_no_oop.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/hw_status_publisher.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_server.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] copying /home/anand289/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/smartphone.py -> /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[0.888s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/template_python_node.py to template_python_node.cpython-312.pyc
+[0.889s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-312.pyc
+[0.889s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/add_two_ints_client.py to add_two_ints_client.cpython-312.pyc
+[0.889s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/add_two_ints_client_no_oop.py to add_two_ints_client_no_oop.cpython-312.pyc
+[0.889s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/hw_status_publisher.py to hw_status_publisher.cpython-312.pyc
+[0.890s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-312.pyc
+[0.890s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/add_two_ints_server.py to add_two_ints_server.cpython-312.pyc
+[0.890s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/__init__.py to __init__.cpython-312.pyc
+[0.890s] byte-compiling /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/smartphone.py to smartphone.cpython-312.pyc
+[0.890s] running install_data
+[0.890s] copying resource/my_py_pkg -> /home/anand289/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.890s] copying package.xml -> /home/anand289/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[0.891s] running install_egg_info
+[0.899s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info
+[0.899s] running install_scripts
+[0.953s] Installing add_two_ints_client script to /home/anand289/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.954s] Installing add_two_ints_client_no_oop script to /home/anand289/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.954s] Installing add_two_ints_server script to /home/anand289/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.954s] Installing hw_status_publisher script to /home/anand289/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.954s] Installing py_node script to /home/anand289/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.954s] Installing robot_news_station script to /home/anand289/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.954s] Installing smartphone script to /home/anand289/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.954s] writing list of installed files to '/home/anand289/ros2_ws/build/my_py_pkg/install.log'
+[0.967s] Invoked command in '/home/anand289/ros2_ws/src/my_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/home/anand289/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/home/anand289/ros2_ws/build/my_py_pkg:/home/anand289/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/anand289/ros2_ws/build/my_py_pkg/build install --record /home/anand289/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data --force
