@@ -71,12 +71,16 @@ include /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_hardware_status.py
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state.py
+/home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_test_robot.py
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area.py
+/home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_set_led.py
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/__init__.py
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/__init__.py
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state_s.c
+/home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_test_robot_s.c
 /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c
+/home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_set_led_s.c
 
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -93,7 +97,9 @@ rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesup
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_robot_interfaces/msg/HardwareStatus.idl
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_robot_interfaces/msg/LEDBatteryState.idl
+rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_robot_interfaces/msg/TestRobot.idl
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl
+rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_robot_interfaces/srv/SetLed.idl
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -112,8 +118,14 @@ rosidl_generator_py/my_robot_interfaces/msg/_hardware_status.py: rosidl_generato
 rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state.py: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state.py
 
+rosidl_generator_py/my_robot_interfaces/msg/_test_robot.py: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/msg/_test_robot.py
+
 rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area.py: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area.py
+
+rosidl_generator_py/my_robot_interfaces/srv/_set_led.py: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/srv/_set_led.py
 
 rosidl_generator_py/my_robot_interfaces/msg/__init__.py: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/msg/__init__.py
@@ -127,8 +139,14 @@ rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c: rosidl_generat
 rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state_s.c: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state_s.c
 
+rosidl_generator_py/my_robot_interfaces/msg/_test_robot_s.c: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/msg/_test_robot_s.c
+
 rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c
+
+rosidl_generator_py/my_robot_interfaces/srv/_set_led_s.c: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_robot_interfaces/srv/_set_led_s.c
 
 my_robot_interfaces__py: /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py
 my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c
@@ -139,9 +157,13 @@ my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_hardware_s
 my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c
 my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state.py
 my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state_s.c
+my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_test_robot.py
+my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/msg/_test_robot_s.c
 my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/__init__.py
 my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area.py
 my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c
+my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_set_led.py
+my_robot_interfaces__py: rosidl_generator_py/my_robot_interfaces/srv/_set_led_s.c
 my_robot_interfaces__py: /home/anand289/ros2_ws/build/my_robot_interfaces/my_robot_interfaces__py/CMakeFiles/my_robot_interfaces__py.dir/build.make
 .PHONY : my_robot_interfaces__py
 

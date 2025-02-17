@@ -76,11 +76,21 @@ CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/ms
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__struct.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__traits.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__type_support.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/test_robot.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__builder.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__struct.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__traits.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__type_support.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/compute_rectangle_area.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__builder.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__struct.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__traits.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/set_led.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__builder.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__struct.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__traits.hpp
+CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__type_support.hpp
 CMakeFiles/my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -104,7 +114,9 @@ rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: /opt/ros/jazzy
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: rosidl_adapter/my_robot_interfaces/msg/HardwareStatus.idl
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: rosidl_adapter/my_robot_interfaces/msg/LEDBatteryState.idl
+rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: rosidl_adapter/my_robot_interfaces/msg/TestRobot.idl
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl
+rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: rosidl_adapter/my_robot_interfaces/srv/SetLed.idl
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
@@ -138,6 +150,21 @@ rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__traits.hp
 rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__type_support.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__type_support.hpp
 
+rosidl_generator_cpp/my_robot_interfaces/msg/test_robot.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/msg/test_robot.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__builder.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__builder.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__struct.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__struct.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__traits.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__traits.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__type_support.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__type_support.hpp
+
 rosidl_generator_cpp/my_robot_interfaces/srv/compute_rectangle_area.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/srv/compute_rectangle_area.hpp
 
@@ -153,6 +180,21 @@ rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__trai
 rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.hpp
 
+rosidl_generator_cpp/my_robot_interfaces/srv/set_led.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/srv/set_led.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__builder.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__builder.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__struct.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__struct.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__traits.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__traits.hpp
+
+rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__type_support.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__type_support.hpp
+
 rosidl_generator_cpp/my_robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
@@ -165,14 +207,24 @@ my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/le
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__struct.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__traits.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/led_battery_state__type_support.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__builder.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__struct.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__traits.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/detail/test_robot__type_support.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/led_battery_state.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/msg/test_robot.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/compute_rectangle_area.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__builder.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__struct.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__traits.hpp
 my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__builder.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__struct.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__traits.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/detail/set_led__type_support.hpp
+my_robot_interfaces__cpp: rosidl_generator_cpp/my_robot_interfaces/srv/set_led.hpp
 my_robot_interfaces__cpp: CMakeFiles/my_robot_interfaces__cpp.dir/build.make
 .PHONY : my_robot_interfaces__cpp
 

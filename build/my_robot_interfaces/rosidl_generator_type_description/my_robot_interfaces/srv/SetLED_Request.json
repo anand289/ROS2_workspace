@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "my_robot_interfaces/srv/SetLED_Request",
+      "fields": [
+        {
+          "name": "led_number",
+          "type": {
+            "type_id": 8,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "status",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "my_robot_interfaces/srv/SetLED_Request",
+      "hash_string": "RIHS01_2b973b16bca223b852671b4ebb26f51aca99c9ed4a3f75361eec823836f5c7df"
+    }
+  ]
+}

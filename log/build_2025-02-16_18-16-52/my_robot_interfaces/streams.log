@@ -1,0 +1,53 @@
+[0.008s] Invoking command in '/home/anand289/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand289/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anand289/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.032s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.112s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.116s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.118s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.139s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.153s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.247s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.248s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.248s]   my_robot_interfaces --arguments-file
+[0.248s]   /home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter__arguments__my_robot_interfaces.json
+[0.248s]   --output-dir
+[0.248s]   /home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces
+[0.248s]   --output-file
+[0.248s]   /home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces.idls)
+[0.248s]   returned error code 1:
+[0.248s] 
+[0.248s]   Traceback (most recent call last):
+[0.248s] 
+[0.248s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.248s]     File "<frozen runpy>", line 88, in _run_code
+[0.248s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.248s]       sys.exit(main())
+[0.248s]                ^^^^^^
+[0.248s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.248s]       abs_idl_file = convert_to_idl(
+[0.248s]                      ^^^^^^^^^^^^^^^
+[0.248s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.248s]       return convert_msg_to_idl(
+[0.248s]              ^^^^^^^^^^^^^^^^^^^
+[0.248s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.248s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.248s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.248s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[0.248s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[0.248s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.248s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[0.248s]       self.base_type = BaseType(
+[0.248s]                        ^^^^^^^^^
+[0.248s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[0.248s]       raise InvalidResourceName(
+[0.248s] 
+[0.249s]   rosidl_adapter.parser.InvalidResourceName: 'test' is an invalid message
+[0.249s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.249s] 
+[0.249s] Call Stack (most recent call first):
+[0.249s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.249s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.249s] 
+[0.249s] [0m
+[0.249s] -- Configuring incomplete, errors occurred!
+[0.251s] gmake: *** [Makefile:1625: cmake_check_build_system] Error 1
+[0.253s] Invoked command in '/home/anand289/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand289/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anand289/ros2_ws/build/my_robot_interfaces -- -j4 -l4

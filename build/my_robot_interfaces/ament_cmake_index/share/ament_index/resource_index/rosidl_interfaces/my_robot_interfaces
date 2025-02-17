@@ -2,5 +2,9 @@ msg/HardwareStatus.idl
 msg/HardwareStatus.msg
 msg/LEDBatteryState.idl
 msg/LEDBatteryState.msg
+msg/TestRobot.idl
+msg/TestRobot.msg
 srv/ComputeRectangleArea.idl
 srv/ComputeRectangleArea.srv
+srv/SetLed.idl
+srv/SetLed.srv
