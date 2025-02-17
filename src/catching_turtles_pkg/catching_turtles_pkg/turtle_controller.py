@@ -8,8 +8,6 @@ class TurtleController(Node):
     def __init__(self):
         super().__init__("turtle_controller")
         
-
-
 def main(args=None):
     rclpy.init(args=args)
     node = TurtleController()
