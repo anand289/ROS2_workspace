@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating catching_turtles_pkg.egg-info
+writing catching_turtles_pkg.egg-info/PKG-INFO
+writing dependency_links to catching_turtles_pkg.egg-info/dependency_links.txt
+writing entry points to catching_turtles_pkg.egg-info/entry_points.txt
+writing requirements to catching_turtles_pkg.egg-info/requires.txt
+writing top-level names to catching_turtles_pkg.egg-info/top_level.txt
+writing manifest file 'catching_turtles_pkg.egg-info/SOURCES.txt'
+reading manifest file 'catching_turtles_pkg.egg-info/SOURCES.txt'
+writing manifest file 'catching_turtles_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/anand289/ros2_ws/install/catching_turtles_pkg/lib/python3.12/site-packages/catching-turtles-pkg.egg-link (link to .)
+Installing turtle_controller script to /home/anand289/ros2_ws/install/catching_turtles_pkg/lib/catching_turtles_pkg
+
+Installed /home/anand289/ros2_ws/build/catching_turtles_pkg
+running symlink_data
+creating /home/anand289/ros2_ws/install/catching_turtles_pkg/share/ament_index
+creating /home/anand289/ros2_ws/install/catching_turtles_pkg/share/ament_index/resource_index
+creating /home/anand289/ros2_ws/install/catching_turtles_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/anand289/ros2_ws/build/catching_turtles_pkg/resource/catching_turtles_pkg -> /home/anand289/ros2_ws/install/catching_turtles_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/anand289/ros2_ws/build/catching_turtles_pkg/package.xml -> /home/anand289/ros2_ws/install/catching_turtles_pkg/share/catching_turtles_pkg

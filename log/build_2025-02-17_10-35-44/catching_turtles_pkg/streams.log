@@ -1,0 +1,18 @@
+[0.446s] Invoking command in '/home/anand289/ros2_ws/build/catching_turtles_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/catching_turtles_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/catching_turtles_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand289/ros2_ws/build/catching_turtles_pkg/build --no-deps symlink_data
+[0.619s] running develop
+[0.703s] running egg_info
+[0.711s] writing catching_turtles_pkg.egg-info/PKG-INFO
+[0.711s] writing dependency_links to catching_turtles_pkg.egg-info/dependency_links.txt
+[0.711s] writing entry points to catching_turtles_pkg.egg-info/entry_points.txt
+[0.712s] writing requirements to catching_turtles_pkg.egg-info/requires.txt
+[0.712s] writing top-level names to catching_turtles_pkg.egg-info/top_level.txt
+[0.730s] reading manifest file 'catching_turtles_pkg.egg-info/SOURCES.txt'
+[0.730s] writing manifest file 'catching_turtles_pkg.egg-info/SOURCES.txt'
+[0.739s] running build_ext
+[0.739s] Creating /home/anand289/ros2_ws/install/catching_turtles_pkg/lib/python3.12/site-packages/catching-turtles-pkg.egg-link (link to .)
+[0.739s] Installing turtle_controller script to /home/anand289/ros2_ws/install/catching_turtles_pkg/lib/catching_turtles_pkg
+[0.740s] Installing turtle_spawner script to /home/anand289/ros2_ws/install/catching_turtles_pkg/lib/catching_turtles_pkg
+[0.740s] 
+[0.740s] Installed /home/anand289/ros2_ws/build/catching_turtles_pkg
+[0.740s] running symlink_data
+[0.761s] Invoked command in '/home/anand289/ros2_ws/build/catching_turtles_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/catching_turtles_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/catching_turtles_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand289/ros2_ws/build/catching_turtles_pkg/build --no-deps symlink_data

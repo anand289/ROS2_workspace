@@ -23,5 +23,6 @@ def generate_launch_description():
     
     for node in robot_news_station_nodes:
         ld.add_action(node)
+    
     ld.add_action(smartphone_node)
     return ld

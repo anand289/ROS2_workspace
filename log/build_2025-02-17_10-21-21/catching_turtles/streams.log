@@ -1,0 +1,22 @@
+[0.452s] Invoking command in '/home/anand289/ros2_ws/build/catching_turtles': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/catching_turtles/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/catching_turtles/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand289/ros2_ws/build/catching_turtles/build --no-deps symlink_data
+[0.609s] running develop
+[0.698s] running egg_info
+[0.699s] creating catching_turtles.egg-info
+[0.708s] writing catching_turtles.egg-info/PKG-INFO
+[0.708s] writing dependency_links to catching_turtles.egg-info/dependency_links.txt
+[0.708s] writing requirements to catching_turtles.egg-info/requires.txt
+[0.708s] writing top-level names to catching_turtles.egg-info/top_level.txt
+[0.708s] writing manifest file 'catching_turtles.egg-info/SOURCES.txt'
+[0.724s] reading manifest file 'catching_turtles.egg-info/SOURCES.txt'
+[0.724s] writing manifest file 'catching_turtles.egg-info/SOURCES.txt'
+[0.733s] running build_ext
+[0.733s] Creating /home/anand289/ros2_ws/install/catching_turtles/lib/python3.12/site-packages/catching-turtles.egg-link (link to .)
+[0.733s] 
+[0.733s] Installed /home/anand289/ros2_ws/build/catching_turtles
+[0.733s] running symlink_data
+[0.733s] creating /home/anand289/ros2_ws/install/catching_turtles/share/ament_index
+[0.733s] creating /home/anand289/ros2_ws/install/catching_turtles/share/ament_index/resource_index
+[0.733s] creating /home/anand289/ros2_ws/install/catching_turtles/share/ament_index/resource_index/packages
+[0.733s] symbolically linking /home/anand289/ros2_ws/build/catching_turtles/resource/catching_turtles -> /home/anand289/ros2_ws/install/catching_turtles/share/ament_index/resource_index/packages
+[0.733s] symbolically linking /home/anand289/ros2_ws/build/catching_turtles/package.xml -> /home/anand289/ros2_ws/install/catching_turtles/share/catching_turtles
+[0.751s] Invoked command in '/home/anand289/ros2_ws/build/catching_turtles' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anand289/ros2_ws/build/catching_turtles/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anand289/ros2_ws/install/catching_turtles/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anand289/ros2_ws/build/catching_turtles/build --no-deps symlink_data

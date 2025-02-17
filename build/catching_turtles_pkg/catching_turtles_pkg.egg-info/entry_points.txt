@@ -1,0 +1,3 @@
+[console_scripts]
+turtle_controller = catching_turtles_pkg.turtle_controller:main
+turtle_spawner = catching_turtles_pkg.turtle_spawner:main
