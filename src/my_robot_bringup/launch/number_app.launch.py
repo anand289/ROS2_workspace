@@ -29,13 +29,6 @@ def generate_launch_description():
         ]
     )
     
-    smartphone_node = Node(
-        package="my_py_pkg",
-        executable="smartphone",
-        name="my_smartphone_node"
-    )
-    
     ld.add_action(number_publisher_node)
     ld.add_action(number_counter_node)
-    ld.add_action(smartphone_node)
     return ld
