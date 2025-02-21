@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_robot_interfaces__cpp"
+  "rosidl_generator_cpp/my_robot_interfaces/msg/alive_turtles.hpp"
+  "rosidl_generator_cpp/my_robot_interfaces/msg/detail/alive_turtles__builder.hpp"
+  "rosidl_generator_cpp/my_robot_interfaces/msg/detail/alive_turtles__struct.hpp"
+  "rosidl_generator_cpp/my_robot_interfaces/msg/detail/alive_turtles__traits.hpp"
+  "rosidl_generator_cpp/my_robot_interfaces/msg/detail/alive_turtles__type_support.hpp"
   "rosidl_generator_cpp/my_robot_interfaces/msg/detail/hardware_status__builder.hpp"
   "rosidl_generator_cpp/my_robot_interfaces/msg/detail/hardware_status__struct.hpp"
   "rosidl_generator_cpp/my_robot_interfaces/msg/detail/hardware_status__traits.hpp"

@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HardwareStatus.msg"
   "msg/LEDBatteryState.msg"
   "msg/TestRobot.msg"
+  "msg/AliveTurtles.msg"
   "srv/ComputeRectangleArea.srv"
   "srv/SetLed.srv"
 )

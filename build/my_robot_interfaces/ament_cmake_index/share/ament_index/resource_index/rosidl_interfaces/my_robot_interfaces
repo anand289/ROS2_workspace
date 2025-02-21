@@ -1,3 +1,5 @@
+msg/AliveTurtles.idl
+msg/AliveTurtles.msg
 msg/HardwareStatus.idl
 msg/HardwareStatus.msg
 msg/LEDBatteryState.idl

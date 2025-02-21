@@ -1,0 +1,42 @@
+[0.008s] Invoking command in '/home/anand289/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand289/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anand289/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.032s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.057s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.096s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.101s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.103s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.123s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.137s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.300s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.348s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.411s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.412s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.569s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[0.581s] -- Configuring done (0.6s)
+[0.608s] -- Generating done (0.0s)
+[0.616s] -- Build files have been written to: /home/anand289/ros2_ws/build/my_robot_interfaces
+[0.635s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[0.639s] [  1%] Built target ament_cmake_python_symlink_my_robot_interfaces
+[0.740s] running egg_info
+[0.747s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.747s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.747s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.779s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.779s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.799s] [  1%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[1.444s] Traceback (most recent call last):
+[1.444s]   File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 50, in <module>
+[1.444s]     sys.exit(main())
+[1.444s]              ^^^^^^
+[1.444s]   File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 46, in main
+[1.444s]     generate_type_hash(args.generator_arguments_file)
+[1.444s]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py", line 162, in generate_type_hash
+[1.444s]     with include_path.open('r') as include_file:
+[1.444s]          ^^^^^^^^^^^^^^^^^^^^^^
+[1.444s]   File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+[1.445s]     return io.open(self, mode, buffering, encoding, errors, newline)
+[1.445s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.445s] FileNotFoundError: [Errno 2] No such file or directory: '/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/String.json'
+[1.471s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_generator_type_description.dir/build.make:85: rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json] Error 1
+[1.471s] gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/my_robot_interfaces__rosidl_generator_type_description.dir/all] Error 2
+[1.472s] gmake: *** [Makefile:146: all] Error 2
+[1.474s] Invoked command in '/home/anand289/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand289/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anand289/ros2_ws/build/my_robot_interfaces -- -j4 -l4

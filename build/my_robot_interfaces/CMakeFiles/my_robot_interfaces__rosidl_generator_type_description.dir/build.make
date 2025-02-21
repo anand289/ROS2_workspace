@@ -69,6 +69,7 @@ include CMakeFiles/my_robot_interfaces__rosidl_generator_type_description.dir/pr
 CMakeFiles/my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json
 CMakeFiles/my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/LEDBatteryState.json
 CMakeFiles/my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/TestRobot.json
+CMakeFiles/my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/AliveTurtles.json
 CMakeFiles/my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/srv/ComputeRectangleArea.json
 CMakeFiles/my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/srv/SetLed.json
 
@@ -77,6 +78,7 @@ rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json: /
 rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json: rosidl_adapter/my_robot_interfaces/msg/HardwareStatus.idl
 rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json: rosidl_adapter/my_robot_interfaces/msg/LEDBatteryState.idl
 rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json: rosidl_adapter/my_robot_interfaces/msg/TestRobot.idl
+rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json: rosidl_adapter/my_robot_interfaces/msg/AliveTurtles.idl
 rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json: rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl
 rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json: rosidl_adapter/my_robot_interfaces/srv/SetLed.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/anand289/ros2_ws/build/my_robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
@@ -88,6 +90,9 @@ rosidl_generator_type_description/my_robot_interfaces/msg/LEDBatteryState.json: 
 rosidl_generator_type_description/my_robot_interfaces/msg/TestRobot.json: rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/my_robot_interfaces/msg/TestRobot.json
 
+rosidl_generator_type_description/my_robot_interfaces/msg/AliveTurtles.json: rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/my_robot_interfaces/msg/AliveTurtles.json
+
 rosidl_generator_type_description/my_robot_interfaces/srv/ComputeRectangleArea.json: rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/my_robot_interfaces/srv/ComputeRectangleArea.json
 
@@ -95,6 +100,7 @@ rosidl_generator_type_description/my_robot_interfaces/srv/SetLed.json: rosidl_ge
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/my_robot_interfaces/srv/SetLed.json
 
 my_robot_interfaces__rosidl_generator_type_description: CMakeFiles/my_robot_interfaces__rosidl_generator_type_description
+my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/AliveTurtles.json
 my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json
 my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/LEDBatteryState.json
 my_robot_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/my_robot_interfaces/msg/TestRobot.json

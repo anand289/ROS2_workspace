@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/alive_turtles__type_support.cpp.o"
+  "CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/alive_turtles__type_support.cpp.o.d"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/hardware_status__type_support.cpp.o"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/hardware_status__type_support.cpp.o.d"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/led_battery_state__type_support.cpp.o"
@@ -11,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/set_led__type_support.cpp.o.d"
   "libmy_robot_interfaces__rosidl_typesupport_cpp.pdb"
   "libmy_robot_interfaces__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/my_robot_interfaces/msg/alive_turtles__type_support.cpp"
   "rosidl_typesupport_cpp/my_robot_interfaces/msg/hardware_status__type_support.cpp"
   "rosidl_typesupport_cpp/my_robot_interfaces/msg/led_battery_state__type_support.cpp"
   "rosidl_typesupport_cpp/my_robot_interfaces/msg/test_robot__type_support.cpp"

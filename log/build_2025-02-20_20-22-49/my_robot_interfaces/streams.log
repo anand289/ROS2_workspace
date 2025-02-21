@@ -1,0 +1,27 @@
+[0.008s] Invoking command in '/home/anand289/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand289/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anand289/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.050s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[0.060s] [  1%] Built target ament_cmake_python_symlink_my_robot_interfaces
+[0.188s] running egg_info
+[0.197s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.197s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.197s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.226s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.228s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.247s] [  1%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[0.876s] Traceback (most recent call last):
+[0.876s]   File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 50, in <module>
+[0.876s]     sys.exit(main())
+[0.876s]              ^^^^^^
+[0.876s]   File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 46, in main
+[0.876s]     generate_type_hash(args.generator_arguments_file)
+[0.876s]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py", line 162, in generate_type_hash
+[0.876s]     with include_path.open('r') as include_file:
+[0.877s]          ^^^^^^^^^^^^^^^^^^^^^^
+[0.877s]   File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+[0.877s]     return io.open(self, mode, buffering, encoding, errors, newline)
+[0.877s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.877s] FileNotFoundError: [Errno 2] No such file or directory: '/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/String.json'
+[0.897s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_generator_type_description.dir/build.make:85: rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json] Error 1
+[0.897s] gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/my_robot_interfaces__rosidl_generator_type_description.dir/all] Error 2
+[0.897s] gmake: *** [Makefile:146: all] Error 2
+[0.900s] Invoked command in '/home/anand289/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anand289/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anand289/ros2_ws/build/my_robot_interfaces -- -j4 -l4

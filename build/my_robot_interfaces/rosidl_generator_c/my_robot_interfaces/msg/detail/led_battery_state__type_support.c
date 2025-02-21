@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "my_robot_interfaces/msg/detail/led_battery_state__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "my_robot_interfaces/msg/detail/led_battery_state__type_support.h"
 #include "my_robot_interfaces/msg/detail/led_battery_state__functions.h"
 #include "my_robot_interfaces/msg/detail/led_battery_state__struct.h"
 

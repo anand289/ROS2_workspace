@@ -322,6 +322,9 @@ ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interface
 # install(FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/TestRobot.json" "DESTINATION" "share/my_robot_interfaces/msg")
 ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/TestRobot.json" "DESTINATION" "share/my_robot_interfaces/msg")
 
+# install(FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/AliveTurtles.json" "DESTINATION" "share/my_robot_interfaces/msg")
+ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/AliveTurtles.json" "DESTINATION" "share/my_robot_interfaces/msg")
+
 # install(FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/srv/ComputeRectangleArea.json" "DESTINATION" "share/my_robot_interfaces/srv")
 ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/srv/ComputeRectangleArea.json" "DESTINATION" "share/my_robot_interfaces/srv")
 
@@ -382,6 +385,9 @@ ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interface
 # install(FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/TestRobot.idl" "DESTINATION" "share/my_robot_interfaces/msg")
 ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/TestRobot.idl" "DESTINATION" "share/my_robot_interfaces/msg")
 
+# install(FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/AliveTurtles.idl" "DESTINATION" "share/my_robot_interfaces/msg")
+ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/AliveTurtles.idl" "DESTINATION" "share/my_robot_interfaces/msg")
+
 # install(FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl" "DESTINATION" "share/my_robot_interfaces/srv")
 ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl" "DESTINATION" "share/my_robot_interfaces/srv")
 
@@ -396,6 +402,9 @@ ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interface
 
 # install(FILES "/home/anand289/ros2_ws/src/my_robot_interfaces/msg/TestRobot.msg" "DESTINATION" "share/my_robot_interfaces/msg")
 ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/src/my_robot_interfaces/msg/TestRobot.msg" "DESTINATION" "share/my_robot_interfaces/msg")
+
+# install(FILES "/home/anand289/ros2_ws/src/my_robot_interfaces/msg/AliveTurtles.msg" "DESTINATION" "share/my_robot_interfaces/msg")
+ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/src/my_robot_interfaces/msg/AliveTurtles.msg" "DESTINATION" "share/my_robot_interfaces/msg")
 
 # install(FILES "/home/anand289/ros2_ws/src/my_robot_interfaces/srv/ComputeRectangleArea.srv" "DESTINATION" "share/my_robot_interfaces/srv")
 ament_cmake_symlink_install_files("/home/anand289/ros2_ws/src/my_robot_interfaces" FILES "/home/anand289/ros2_ws/src/my_robot_interfaces/srv/ComputeRectangleArea.srv" "DESTINATION" "share/my_robot_interfaces/srv")

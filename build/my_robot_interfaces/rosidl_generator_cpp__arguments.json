@@ -6,6 +6,7 @@
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/HardwareStatus.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/LEDBatteryState.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/TestRobot.idl",
+    "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/AliveTurtles.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/ComputeRectangleArea.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/SetLed.idl"
   ],
@@ -37,6 +38,7 @@
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/HardwareStatus.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/LEDBatteryState.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/TestRobot.idl",
+    "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/AliveTurtles.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl",
     "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/SetLed.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
@@ -47,6 +49,7 @@
     "msg/HardwareStatus.idl:/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/HardwareStatus.json",
     "msg/LEDBatteryState.idl:/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/LEDBatteryState.json",
     "msg/TestRobot.idl:/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/TestRobot.json",
+    "msg/AliveTurtles.idl:/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/msg/AliveTurtles.json",
     "srv/ComputeRectangleArea.idl:/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/srv/ComputeRectangleArea.json",
     "srv/SetLed.idl:/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces/srv/SetLed.json"
   ]

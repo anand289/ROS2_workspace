@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
   "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/__init__.py"
+  "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_alive_turtles.py"
+  "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_alive_turtles_s.c"
   "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status.py"
   "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c"
   "/home/anand289/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces/msg/_led_battery_state.py"

@@ -1,0 +1,1 @@
+string[] alive_turtles

@@ -8,7 +8,7 @@ from rclpy.node import Node
 from turtlesim.srv import Spawn
 from turtlesim.srv import Kill
 from functools import partial
-
+from my_robot_interfaces.msg import AliveTurtles
 
 class TurtleSpawner(Node):
 
@@ -17,6 +17,14 @@ class TurtleSpawner(Node):
         
         self.timer = self.create_timer(1.0, partial(self.random_spawning))
         self.alive_turtles = []        
+        self.publisher_ = self.create_publisher(AliveTurtles,"alive_turtles",10)
+        self.timer_ = self.create_timer(0.01,self.publish_array)
+        
+    def publish_array(self):
+        msg = AliveTurtles()
+        msg.alive_turtles = self.alive_turtles
+        self.publisher_.publish(msg)
+        
                                        
     def random_spawning(self):
         x = random.uniform(0.0,11.0)
@@ -36,14 +44,14 @@ class TurtleSpawner(Node):
         future = client.call_async(request)
         future.add_done_callback(partial(self.callback_call_kill, name = name))
         
+        
     def callback_call_kill(self, future, name):
         try:
             self.alive_turtles.remove(name)
             self.get_logger().info("Removed turtle"+name)
         except Exception as e:
-            self.get_logger().error(" Service call failed %r" % (e,))
-        
-        
+            self.get_logger().error(" Service call failed %r" % (e,))    
+            
         
     def callback_spawn(self, x, y, theta):
         client = self.create_client(Spawn, "spawn")
@@ -71,7 +79,7 @@ class TurtleSpawner(Node):
             if len(self.alive_turtles)>5:
                 self.callback_kill(self.alive_turtles[0])
         except Exception as e:
-            self.get_logger().error(" Service call failed %r" % (e,))
+            self.get_logger().error("Service call failed %r" % (e,))
         
 def main(args=None):
     rclpy.init(args=args)
