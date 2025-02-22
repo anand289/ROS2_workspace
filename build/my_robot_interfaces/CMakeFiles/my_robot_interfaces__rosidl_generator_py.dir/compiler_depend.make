@@ -14,7 +14,6 @@ CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_r
   /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
   /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
   /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
   /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
   /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
@@ -1750,6 +1749,10 @@ rosidl_generator_c/my_robot_interfaces/msg/detail/hardware_status__functions.h:
 
 /usr/include/stdio.h:
 
+/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
+
+/usr/include/asm-generic/posix_types.h:
+
 /usr/include/aarch64-linux-gnu/sys/types.h:
 
 /usr/include/python3.12/pyport.h:
@@ -1872,10 +1875,6 @@ rosidl_generator_c/my_robot_interfaces/msg/rosidl_generator_c__visibility_contro
 
 /usr/include/aarch64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/aarch64-linux-gnu/bits/sched.h:
-
-/usr/include/python3.12/cpython/modsupport.h:
-
 /usr/include/aarch64-linux-gnu/asm/errno.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h:
@@ -1884,6 +1883,8 @@ rosidl_generator_c/my_robot_interfaces/msg/rosidl_generator_c__visibility_contro
 
 /usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
 
+/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/local_lim.h:
@@ -1891,6 +1892,10 @@ rosidl_generator_c/my_robot_interfaces/msg/rosidl_generator_c__visibility_contro
 /usr/include/aarch64-linux-gnu/bits/endianness.h:
 
 /usr/include/ctype.h:
+
+/usr/include/aarch64-linux-gnu/bits/sched.h:
+
+/usr/include/python3.12/cpython/modsupport.h:
 
 /usr/include/aarch64-linux-gnu/bits/posix_opt.h:
 
@@ -1907,8 +1912,6 @@ rosidl_generator_c/my_robot_interfaces/msg/rosidl_generator_c__visibility_contro
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h:
-
-/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/aarch64-linux-gnu/python3.12/pyconfig.h:
 
@@ -2039,10 +2042,6 @@ rosidl_generator_py/my_robot_interfaces/msg/_alive_turtles_s.c:
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
-
-/opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
-
-/usr/include/asm-generic/posix_types.h:
 
 /usr/include/assert.h:
 

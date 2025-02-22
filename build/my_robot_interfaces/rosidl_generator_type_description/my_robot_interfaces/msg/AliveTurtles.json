@@ -4,9 +4,9 @@
       "type_name": "my_robot_interfaces/msg/AliveTurtles",
       "fields": [
         {
-          "name": "alive_turtles",
+          "name": "next_turtle",
           "type": {
-            "type_id": 161,
+            "type_id": 17,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -20,7 +20,7 @@
   "type_hashes": [
     {
       "type_name": "my_robot_interfaces/msg/AliveTurtles",
-      "hash_string": "RIHS01_c72d769ccca4cdc973f48ca0139371646e243403ae9b7d3f2e9cebeb9b063e9b"
+      "hash_string": "RIHS01_7fbd76f3a85ed30cb16554a4e7efdcad661b0dfa0ff1510e1b1c57510572baf8"
     }
   ]
 }

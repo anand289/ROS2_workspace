@@ -1,1 +1,1 @@
-string[] alive_turtles
+string next_turtle

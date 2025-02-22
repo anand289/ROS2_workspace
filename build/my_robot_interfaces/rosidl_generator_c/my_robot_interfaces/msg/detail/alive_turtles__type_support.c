@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "my_robot_interfaces/msg/detail/alive_turtles__functions.h"
-#include "my_robot_interfaces/msg/detail/alive_turtles__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "my_robot_interfaces/msg/detail/alive_turtles__type_support.h"
+#include "my_robot_interfaces/msg/detail/alive_turtles__struct.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -24,15 +24,15 @@ namespace msg
 namespace builder
 {
 
-class Init_AliveTurtles_alive_turtles
+class Init_AliveTurtles_next_turtle
 {
 public:
-  Init_AliveTurtles_alive_turtles()
+  Init_AliveTurtles_next_turtle()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::my_robot_interfaces::msg::AliveTurtles alive_turtles(::my_robot_interfaces::msg::AliveTurtles::_alive_turtles_type arg)
+  ::my_robot_interfaces::msg::AliveTurtles next_turtle(::my_robot_interfaces::msg::AliveTurtles::_next_turtle_type arg)
   {
-    msg_.alive_turtles = std::move(arg);
+    msg_.next_turtle = std::move(arg);
     return std::move(msg_);
   }
 
@@ -51,7 +51,7 @@ template<>
 inline
 auto build<::my_robot_interfaces::msg::AliveTurtles>()
 {
-  return my_robot_interfaces::msg::builder::Init_AliveTurtles_alive_turtles();
+  return my_robot_interfaces::msg::builder::Init_AliveTurtles_next_turtle();
 }
 
 }  // namespace my_robot_interfaces

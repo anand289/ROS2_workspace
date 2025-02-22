@@ -11,10 +11,10 @@ my_robot_interfaces__msg__AliveTurtles__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0xc7, 0x2d, 0x76, 0x9c, 0xcc, 0xa4, 0xcd, 0xc9,
-      0x73, 0xf4, 0x8c, 0xa0, 0x13, 0x93, 0x71, 0x64,
-      0x6e, 0x24, 0x34, 0x03, 0xae, 0x9b, 0x7d, 0x3f,
-      0x2e, 0x9c, 0xeb, 0xeb, 0x9b, 0x06, 0x3e, 0x9b,
+      0x7f, 0xbd, 0x76, 0xf3, 0xa8, 0x5e, 0xd3, 0x0c,
+      0xb1, 0x65, 0x54, 0xa4, 0xe7, 0xef, 0xdc, 0xad,
+      0x66, 0x1b, 0x0d, 0xfa, 0x0f, 0xf1, 0x51, 0x0e,
+      0x1b, 0x1c, 0x57, 0x51, 0x05, 0x72, 0xba, 0xf8,
     }};
   return &hash;
 }
@@ -31,13 +31,13 @@ my_robot_interfaces__msg__AliveTurtles__get_type_hash(
 static char my_robot_interfaces__msg__AliveTurtles__TYPE_NAME[] = "my_robot_interfaces/msg/AliveTurtles";
 
 // Define type names, field names, and default values
-static char my_robot_interfaces__msg__AliveTurtles__FIELD_NAME__alive_turtles[] = "alive_turtles";
+static char my_robot_interfaces__msg__AliveTurtles__FIELD_NAME__next_turtle[] = "next_turtle";
 
 static rosidl_runtime_c__type_description__Field my_robot_interfaces__msg__AliveTurtles__FIELDS[] = {
   {
-    {my_robot_interfaces__msg__AliveTurtles__FIELD_NAME__alive_turtles, 13, 13},
+    {my_robot_interfaces__msg__AliveTurtles__FIELD_NAME__next_turtle, 11, 11},
     {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_STRING_UNBOUNDED_SEQUENCE,
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_STRING,
       0,
       0,
       {NULL, 0, 0},
@@ -66,7 +66,7 @@ my_robot_interfaces__msg__AliveTurtles__get_type_description(
 }
 
 static char toplevel_type_raw_source[] =
-  "string[] alive_turtles";
+  "string next_turtle";
 
 static char msg_encoding[] = "msg";
 
@@ -80,7 +80,7 @@ my_robot_interfaces__msg__AliveTurtles__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {my_robot_interfaces__msg__AliveTurtles__TYPE_NAME, 36, 36},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 22, 22},
+    {toplevel_type_raw_source, 18, 18},
   };
   return &source;
 }

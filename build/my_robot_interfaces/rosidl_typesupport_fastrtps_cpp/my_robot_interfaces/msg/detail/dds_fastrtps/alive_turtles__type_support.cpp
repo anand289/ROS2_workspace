@@ -36,10 +36,8 @@ cdr_serialize(
   const my_robot_interfaces::msg::AliveTurtles & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: alive_turtles
-  {
-    cdr << ros_message.alive_turtles;
-  }
+  // Member: next_turtle
+  cdr << ros_message.next_turtle;
 
   return true;
 }
@@ -50,10 +48,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   my_robot_interfaces::msg::AliveTurtles & ros_message)
 {
-  // Member: alive_turtles
-  {
-    cdr >> ros_message.alive_turtles;
-  }
+  // Member: next_turtle
+  cdr >> ros_message.next_turtle;
 
   return true;
 }
@@ -72,17 +68,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: alive_turtles
-  {
-    size_t array_size = ros_message.alive_turtles.size();
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        (ros_message.alive_turtles[index].size() + 1);
-    }
-  }
+  // Member: next_turtle
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.next_turtle.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -107,13 +96,9 @@ max_serialized_size_AliveTurtles(
   full_bounded = true;
   is_plain = true;
 
-  // Member: alive_turtles
+  // Member: next_turtle
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -131,7 +116,7 @@ max_serialized_size_AliveTurtles(
     using DataType = my_robot_interfaces::msg::AliveTurtles;
     is_plain =
       (
-      offsetof(DataType, alive_turtles) +
+      offsetof(DataType, next_turtle) +
       last_member_size
       ) == ret_val;
   }
@@ -145,10 +130,8 @@ cdr_serialize_key(
   const my_robot_interfaces::msg::AliveTurtles & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: alive_turtles
-  {
-    cdr << ros_message.alive_turtles;
-  }
+  // Member: next_turtle
+  cdr << ros_message.next_turtle;
 
   return true;
 }
@@ -166,17 +149,10 @@ get_serialized_size_key(
   (void)padding;
   (void)wchar_size;
 
-  // Member: alive_turtles
-  {
-    size_t array_size = ros_message.alive_turtles.size();
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        (ros_message.alive_turtles[index].size() + 1);
-    }
-  }
+  // Member: next_turtle
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.next_turtle.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -200,13 +176,9 @@ max_serialized_size_key_AliveTurtles(
   full_bounded = true;
   is_plain = true;
 
-  // Member: alive_turtles
+  // Member: next_turtle
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -224,7 +196,7 @@ max_serialized_size_key_AliveTurtles(
     using DataType = my_robot_interfaces::msg::AliveTurtles;
     is_plain =
       (
-      offsetof(DataType, alive_turtles) +
+      offsetof(DataType, next_turtle) +
       last_member_size
       ) == ret_val;
   }

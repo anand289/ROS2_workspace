@@ -20,13 +20,13 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'alive_turtles'
+// Member 'next_turtle'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in msg/AliveTurtles in the package my_robot_interfaces.
 typedef struct my_robot_interfaces__msg__AliveTurtles
 {
-  rosidl_runtime_c__String__Sequence alive_turtles;
+  rosidl_runtime_c__String next_turtle;
 } my_robot_interfaces__msg__AliveTurtles;
 
 // Struct for a sequence of my_robot_interfaces__msg__AliveTurtles.

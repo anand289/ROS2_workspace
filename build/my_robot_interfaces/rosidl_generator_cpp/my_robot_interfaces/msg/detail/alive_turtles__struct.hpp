@@ -38,25 +38,33 @@ struct AliveTurtles_
 
   explicit AliveTurtles_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->next_turtle = "";
+    }
   }
 
   explicit AliveTurtles_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : next_turtle(_alloc)
   {
-    (void)_init;
-    (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->next_turtle = "";
+    }
   }
 
   // field types and members
-  using _alive_turtles_type =
-    std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>>;
-  _alive_turtles_type alive_turtles;
+  using _next_turtle_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _next_turtle_type next_turtle;
 
   // setters for named parameter idiom
-  Type & set__alive_turtles(
-    const std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>> & _arg)
+  Type & set__next_turtle(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->alive_turtles = _arg;
+    this->next_turtle = _arg;
     return *this;
   }
 
@@ -102,7 +110,7 @@ struct AliveTurtles_
   // comparison operators
   bool operator==(const AliveTurtles_ & other) const
   {
-    if (this->alive_turtles != other.alive_turtles) {
+    if (this->next_turtle != other.next_turtle) {
       return false;
     }
     return true;

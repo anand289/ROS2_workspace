@@ -36,8 +36,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // alive_turtles
-#include "rosidl_runtime_c/string_functions.h"  // alive_turtles
+#include "rosidl_runtime_c/string.h"  // next_turtle
+#include "rosidl_runtime_c/string_functions.h"  // next_turtle
 
 // forward declare type support functions
 
@@ -50,23 +50,18 @@ bool cdr_serialize_my_robot_interfaces__msg__AliveTurtles(
   const my_robot_interfaces__msg__AliveTurtles * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: alive_turtles
+  // Field name: next_turtle
   {
-    size_t size = ros_message->alive_turtles.size;
-    auto array_ptr = ros_message->alive_turtles.data;
-    cdr << static_cast<uint32_t>(size);
-    for (size_t i = 0; i < size; ++i) {
-      const rosidl_runtime_c__String * str = &array_ptr[i];
-      if (str->capacity == 0 || str->capacity <= str->size) {
-        fprintf(stderr, "string capacity not greater than size\n");
-        return false;
-      }
-      if (str->data[str->size] != '\0') {
-        fprintf(stderr, "string not null-terminated\n");
-        return false;
-      }
-      cdr << str->data;
+    const rosidl_runtime_c__String * str = &ros_message->next_turtle;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
     }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -77,33 +72,19 @@ bool cdr_deserialize_my_robot_interfaces__msg__AliveTurtles(
   eprosima::fastcdr::Cdr & cdr,
   my_robot_interfaces__msg__AliveTurtles * ros_message)
 {
-  // Field name: alive_turtles
+  // Field name: next_turtle
   {
-    uint32_t cdrSize;
-    cdr >> cdrSize;
-    size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->alive_turtles.data) {
-      rosidl_runtime_c__String__Sequence__fini(&ros_message->alive_turtles);
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->next_turtle.data) {
+      rosidl_runtime_c__String__init(&ros_message->next_turtle);
     }
-    if (!rosidl_runtime_c__String__Sequence__init(&ros_message->alive_turtles, size)) {
-      fprintf(stderr, "failed to create array for field 'alive_turtles'");
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->next_turtle,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'next_turtle'\n");
       return false;
-    }
-    auto array_ptr = ros_message->alive_turtles.data;
-    for (size_t i = 0; i < size; ++i) {
-      std::string tmp;
-      cdr >> tmp;
-      auto & ros_i = array_ptr[i];
-      if (!ros_i.data) {
-        rosidl_runtime_c__String__init(&ros_i);
-      }
-      bool succeeded = rosidl_runtime_c__String__assign(
-        &ros_i,
-        tmp.c_str());
-      if (!succeeded) {
-        fprintf(stderr, "failed to assign string into field 'alive_turtles'\n");
-        return false;
-      }
     }
   }
 
@@ -125,18 +106,10 @@ size_t get_serialized_size_my_robot_interfaces__msg__AliveTurtles(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: alive_turtles
-  {
-    size_t array_size = ros_message->alive_turtles.size;
-    auto array_ptr = ros_message->alive_turtles.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        (array_ptr[index].size + 1);
-    }
-  }
+  // Field name: next_turtle
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->next_turtle.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -160,13 +133,9 @@ size_t max_serialized_size_my_robot_interfaces__msg__AliveTurtles(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: alive_turtles
+  // Field name: next_turtle
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -185,7 +154,7 @@ size_t max_serialized_size_my_robot_interfaces__msg__AliveTurtles(
     using DataType = my_robot_interfaces__msg__AliveTurtles;
     is_plain =
       (
-      offsetof(DataType, alive_turtles) +
+      offsetof(DataType, next_turtle) +
       last_member_size
       ) == ret_val;
   }
@@ -197,23 +166,18 @@ bool cdr_serialize_key_my_robot_interfaces__msg__AliveTurtles(
   const my_robot_interfaces__msg__AliveTurtles * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: alive_turtles
+  // Field name: next_turtle
   {
-    size_t size = ros_message->alive_turtles.size;
-    auto array_ptr = ros_message->alive_turtles.data;
-    cdr << static_cast<uint32_t>(size);
-    for (size_t i = 0; i < size; ++i) {
-      const rosidl_runtime_c__String * str = &array_ptr[i];
-      if (str->capacity == 0 || str->capacity <= str->size) {
-        fprintf(stderr, "string capacity not greater than size\n");
-        return false;
-      }
-      if (str->data[str->size] != '\0') {
-        fprintf(stderr, "string not null-terminated\n");
-        return false;
-      }
-      cdr << str->data;
+    const rosidl_runtime_c__String * str = &ros_message->next_turtle;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
     }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -234,18 +198,10 @@ size_t get_serialized_size_key_my_robot_interfaces__msg__AliveTurtles(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: alive_turtles
-  {
-    size_t array_size = ros_message->alive_turtles.size;
-    auto array_ptr = ros_message->alive_turtles.data;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        (array_ptr[index].size + 1);
-    }
-  }
+  // Field name: next_turtle
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->next_turtle.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -267,13 +223,9 @@ size_t max_serialized_size_key_my_robot_interfaces__msg__AliveTurtles(
 
   full_bounded = true;
   is_plain = true;
-  // Field name: alive_turtles
+  // Field name: next_turtle
   {
-    size_t array_size = 0;
-    full_bounded = false;
-    is_plain = false;
-    current_alignment += padding +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t array_size = 1;
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -291,7 +243,7 @@ size_t max_serialized_size_key_my_robot_interfaces__msg__AliveTurtles(
     using DataType = my_robot_interfaces__msg__AliveTurtles;
     is_plain =
       (
-      offsetof(DataType, alive_turtles) +
+      offsetof(DataType, next_turtle) +
       last_member_size
       ) == ret_val;
   }

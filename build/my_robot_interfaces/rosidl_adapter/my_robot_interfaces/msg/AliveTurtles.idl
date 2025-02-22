@@ -6,7 +6,7 @@
 module my_robot_interfaces {
   module msg {
     struct AliveTurtles {
-      sequence<string> alive_turtles;
+      string next_turtle;
     };
   };
 };

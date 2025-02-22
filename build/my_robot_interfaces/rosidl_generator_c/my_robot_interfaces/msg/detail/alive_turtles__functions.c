@@ -12,7 +12,7 @@
 
 
 // Include directives for member types
-// Member `alive_turtles`
+// Member `next_turtle`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -21,8 +21,8 @@ my_robot_interfaces__msg__AliveTurtles__init(my_robot_interfaces__msg__AliveTurt
   if (!msg) {
     return false;
   }
-  // alive_turtles
-  if (!rosidl_runtime_c__String__Sequence__init(&msg->alive_turtles, 0)) {
+  // next_turtle
+  if (!rosidl_runtime_c__String__init(&msg->next_turtle)) {
     my_robot_interfaces__msg__AliveTurtles__fini(msg);
     return false;
   }
@@ -35,8 +35,8 @@ my_robot_interfaces__msg__AliveTurtles__fini(my_robot_interfaces__msg__AliveTurt
   if (!msg) {
     return;
   }
-  // alive_turtles
-  rosidl_runtime_c__String__Sequence__fini(&msg->alive_turtles);
+  // next_turtle
+  rosidl_runtime_c__String__fini(&msg->next_turtle);
 }
 
 bool
@@ -45,9 +45,9 @@ my_robot_interfaces__msg__AliveTurtles__are_equal(const my_robot_interfaces__msg
   if (!lhs || !rhs) {
     return false;
   }
-  // alive_turtles
-  if (!rosidl_runtime_c__String__Sequence__are_equal(
-      &(lhs->alive_turtles), &(rhs->alive_turtles)))
+  // next_turtle
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->next_turtle), &(rhs->next_turtle)))
   {
     return false;
   }
@@ -62,9 +62,9 @@ my_robot_interfaces__msg__AliveTurtles__copy(
   if (!input || !output) {
     return false;
   }
-  // alive_turtles
-  if (!rosidl_runtime_c__String__Sequence__copy(
-      &(input->alive_turtles), &(output->alive_turtles)))
+  // next_turtle
+  if (!rosidl_runtime_c__String__copy(
+      &(input->next_turtle), &(output->next_turtle)))
   {
     return false;
   }

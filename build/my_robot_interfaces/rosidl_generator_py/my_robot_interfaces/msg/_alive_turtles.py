@@ -62,18 +62,18 @@ class AliveTurtles(metaclass=Metaclass_AliveTurtles):
     """Message class 'AliveTurtles'."""
 
     __slots__ = [
-        '_alive_turtles',
+        '_next_turtle',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        'alive_turtles': 'sequence<string>',
+        'next_turtle': 'string',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -85,7 +85,7 @@ class AliveTurtles(metaclass=Metaclass_AliveTurtles):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.alive_turtles = kwargs.get('alive_turtles', [])
+        self.next_turtle = kwargs.get('next_turtle', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -117,7 +117,7 @@ class AliveTurtles(metaclass=Metaclass_AliveTurtles):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.alive_turtles != other.alive_turtles:
+        if self.next_turtle != other.next_turtle:
             return False
         return True
 
@@ -127,24 +127,14 @@ class AliveTurtles(metaclass=Metaclass_AliveTurtles):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def alive_turtles(self):
-        """Message field 'alive_turtles'."""
-        return self._alive_turtles
+    def next_turtle(self):
+        """Message field 'next_turtle'."""
+        return self._next_turtle
 
-    @alive_turtles.setter
-    def alive_turtles(self, value):
+    @next_turtle.setter
+    def next_turtle(self, value):
         if self._check_fields:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
             assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, str) for v in value) and
-                 True), \
-                "The 'alive_turtles' field must be a set or sequence and each value of type 'str'"
-        self._alive_turtles = value
+                isinstance(value, str), \
+                "The 'next_turtle' field must be of type 'str'"
+        self._next_turtle = value

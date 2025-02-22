@@ -28,21 +28,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: alive_turtles
+  // member: next_turtle
   {
-    if (msg.alive_turtles.size() == 0) {
-      out << "alive_turtles: []";
-    } else {
-      out << "alive_turtles: [";
-      size_t pending_items = msg.alive_turtles.size();
-      for (auto item : msg.alive_turtles) {
-        rosidl_generator_traits::value_to_yaml(item, out);
-        if (--pending_items > 0) {
-          out << ", ";
-        }
-      }
-      out << "]";
-    }
+    out << "next_turtle: ";
+    rosidl_generator_traits::value_to_yaml(msg.next_turtle, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -51,24 +40,14 @@ inline void to_block_style_yaml(
   const AliveTurtles & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: alive_turtles
+  // member: next_turtle
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.alive_turtles.size() == 0) {
-      out << "alive_turtles: []\n";
-    } else {
-      out << "alive_turtles:\n";
-      for (auto item : msg.alive_turtles) {
-        if (indentation > 0) {
-          out << std::string(indentation, ' ');
-        }
-        out << "- ";
-        rosidl_generator_traits::value_to_yaml(item, out);
-        out << "\n";
-      }
-    }
+    out << "next_turtle: ";
+    rosidl_generator_traits::value_to_yaml(msg.next_turtle, out);
+    out << "\n";
   }
 }  // NOLINT(readability/fn_size)
 

@@ -16,8 +16,6 @@
 #include "my_robot_interfaces/msg/detail/alive_turtles__struct.h"
 #include "my_robot_interfaces/msg/detail/alive_turtles__functions.h"
 
-#include "rosidl_runtime_c/primitives_sequence.h"
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
 #include "rosidl_runtime_c/string.h"
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -55,49 +53,19 @@ bool my_robot_interfaces__msg__alive_turtles__convert_from_py(PyObject * _pymsg,
     assert(strncmp("my_robot_interfaces.msg._alive_turtles.AliveTurtles", full_classname_dest, 51) == 0);
   }
   my_robot_interfaces__msg__AliveTurtles * ros_message = _ros_message;
-  {  // alive_turtles
-    PyObject * field = PyObject_GetAttrString(_pymsg, "alive_turtles");
+  {  // next_turtle
+    PyObject * field = PyObject_GetAttrString(_pymsg, "next_turtle");
     if (!field) {
       return false;
     }
-    {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'alive_turtles'");
-      if (!seq_field) {
-        Py_DECREF(field);
-        return false;
-      }
-      Py_ssize_t size = PySequence_Size(field);
-      if (-1 == size) {
-        Py_DECREF(seq_field);
-        Py_DECREF(field);
-        return false;
-      }
-      if (!rosidl_runtime_c__String__Sequence__init(&(ros_message->alive_turtles), size)) {
-        PyErr_SetString(PyExc_RuntimeError, "unable to create String__Sequence ros_message");
-        Py_DECREF(seq_field);
-        Py_DECREF(field);
-        return false;
-      }
-      rosidl_runtime_c__String * dest = ros_message->alive_turtles.data;
-      for (Py_ssize_t i = 0; i < size; ++i) {
-        PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
-        if (!item) {
-          Py_DECREF(seq_field);
-          Py_DECREF(field);
-          return false;
-        }
-        assert(PyUnicode_Check(item));
-        PyObject * encoded_item = PyUnicode_AsUTF8String(item);
-        if (!encoded_item) {
-          Py_DECREF(seq_field);
-          Py_DECREF(field);
-          return false;
-        }
-        rosidl_runtime_c__String__assign(&dest[i], PyBytes_AS_STRING(encoded_item));
-        Py_DECREF(encoded_item);
-      }
-      Py_DECREF(seq_field);
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
     }
+    rosidl_runtime_c__String__assign(&ros_message->next_turtle, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
 
@@ -122,26 +90,17 @@ PyObject * my_robot_interfaces__msg__alive_turtles__convert_to_py(void * raw_ros
     }
   }
   my_robot_interfaces__msg__AliveTurtles * ros_message = (my_robot_interfaces__msg__AliveTurtles *)raw_ros_message;
-  {  // alive_turtles
+  {  // next_turtle
     PyObject * field = NULL;
-    size_t size = ros_message->alive_turtles.size;
-    rosidl_runtime_c__String * src = ros_message->alive_turtles.data;
-    field = PyList_New(size);
+    field = PyUnicode_DecodeUTF8(
+      ros_message->next_turtle.data,
+      strlen(ros_message->next_turtle.data),
+      "replace");
     if (!field) {
       return NULL;
     }
-    for (size_t i = 0; i < size; ++i) {
-      PyObject * decoded_item = PyUnicode_DecodeUTF8(src[i].data, strlen(src[i].data), "replace");
-      if (!decoded_item) {
-        return NULL;
-      }
-      int rc = PyList_SetItem(field, i, decoded_item);
-      (void)rc;
-      assert(rc == 0);
-    }
-    assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "alive_turtles", field);
+      int rc = PyObject_SetAttrString(_pymessage, "next_turtle", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
