@@ -18,6 +18,8 @@
             <origin xyz="0 0 0.1" rpy="0 0 0"/>
             <material name="green" />
         </visual>
+        <xacro:box_inertia m="5.0" l="${base_length}" w = "${base_hheight}" h ="${base_height}"
+                           xyz="0 0 ${base_length}" rpy ="0 0 0" />
     </link>
 
     <xacro:macro name="wheel_link" params="prefix">
