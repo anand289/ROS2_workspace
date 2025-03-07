@@ -1,9 +1,0 @@
-source;share/catching_turtles/hook/pythonpath.ps1
-source;share/catching_turtles/hook/pythonpath.dsv
-source;share/catching_turtles/hook/pythonpath.sh
-source;share/catching_turtles/hook/ament_prefix_path.ps1
-source;share/catching_turtles/hook/ament_prefix_path.dsv
-source;share/catching_turtles/hook/ament_prefix_path.sh
-source;../../build/catching_turtles/share/catching_turtles/hook/pythonpath_develop.ps1
-source;../../build/catching_turtles/share/catching_turtles/hook/pythonpath_develop.dsv
-source;../../build/catching_turtles/share/catching_turtles/hook/pythonpath_develop.sh
